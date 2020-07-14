@@ -10,12 +10,10 @@ import re
 import numpy as np
 
 # Keras
-
+import joblib
+from tensorflow.keras.applications.imagenet_utils import preprocess_input, decode_predictions
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
-from keras.applications.vgg16 import preprocess_input
-from keras.applications.vgg16 import decode_predictions
-import joblib
 
 # Flask utils
 from flask import Flask, redirect, url_for, request, render_template
@@ -30,7 +28,6 @@ MODEL_PATH ='vgg16.h5'
 
 # Load your trained model
 model = load_model(MODEL_PATH)
-
 
 
 
