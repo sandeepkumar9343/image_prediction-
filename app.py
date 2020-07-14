@@ -28,7 +28,7 @@ MODEL_PATH ='vgg16.h5'
 
 # Load your trained model
 model = load_model(MODEL_PATH)
-
+model._make_predict_function()  
 
 
 def model_predict(img_path, model):
