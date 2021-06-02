@@ -43,7 +43,7 @@ six==1.15.0
 soupsieve==2.0.1
 tensorflow
 termcolor==1.1.0
-urllib3==1.25.9
+urllib3==1.26.5
 Werkzeug==1.0.1
 wincertstore==0.2
 wrapt==1.12.1
